@@ -1,7 +1,11 @@
 import { Box, Select } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
+import { useState } from "react";
+import HomePageBody from "./HomePageBody";
 
 export default function Navbar() {
+  const [list, setList] = useState(false);
+  // console.log(list);
   return (
     <Box
       w="100%"
@@ -12,19 +16,20 @@ export default function Navbar() {
     >
       <Tabs>
         <TabList h="40px" display="flex" justifyContent="space-between">
-          <Select
-            bgColor="blackAlpha.100"
-            letterSpacing="3px"
-            mr="15px"
-            w="300px"
-            border="0px"
-            color="red"
-            placeholder="SHOP BY CATEGORY"
-          >
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </Select>
+          <Tab border="0px">
+            <Select
+              bgColor="blackAlpha.100"
+              letterSpacing="3px"
+              mr="15px"
+              ml="-17px"
+              w="300px"
+              border="0px"
+              color="red"
+              placeholder="SHOP BY CATEGORY"
+              onMouseOver={() => setList(true)}
+              onMouseOut={() => setList(false)}
+            ></Select>
+          </Tab>
           <Tab p="0" h="40px" fontSize="15px">
             MY ORDERS
           </Tab>
@@ -48,6 +53,10 @@ export default function Navbar() {
           </Tab>
         </TabList>
         <TabPanels>
+          <TabPanel p="0">
+            {/* <h1>Hellow</h1> */}
+            <HomePageBody />
+          </TabPanel>
           <TabPanel>1</TabPanel>
           <TabPanel>2</TabPanel>
           <TabPanel>3</TabPanel>
