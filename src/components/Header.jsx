@@ -1,9 +1,16 @@
-import { Box, Image, Text, Input, Spacer, HStack } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import {
+  Box,
+  Image,
+  Text,
+  Input,
+  Spacer,
+  HStack,
+  Select
+} from "@chakra-ui/react";
 
-export default function Header() {
+export default function Header({ setLogin, setRegister }) {
   return (
-    <Box>
+    <Box position="sticky" top="1px" backgroundColor="white">
       <HStack spacing="20px" w="100%">
         <Box>
           <Image
@@ -13,54 +20,85 @@ export default function Header() {
           ></Image>
         </Box>
         <Box w="100%" pl="25px">
-          <HStack w="100%" fontSize="12px" spacing="30px" p="0px 3px 0px 50px">
+          <HStack w="100%" fontSize="12px" spacing="10px" p="0px 3px 0px 50px">
             <Text>Online Availability</Text>
+            <Text>|</Text>
             <Text>Fresh & Fast</Text>
+            <Text>|</Text>
             <Text>Store Locator</Text>
+            <Text>|</Text>
             <Text>Contact Us</Text>
-            <Text display="flex">
-              <Image
-                w="15px"
-                src="https://icon-library.com/images/06_1-512_83716.png"
-              ></Image>
-              <select name="" id="">
-                <option value="">City name</option>
-                <option>Delhi NCR</option>
-                <option>Navi Mumbai</option>
-                <option>Bangalore</option>
-                <option>Kolkata</option>
-                <option>Mumbai</option>
-                <option>Pune</option>
-              </select>
+            <Text>|</Text>
+
+            <Spacer></Spacer>
+            <Text cursor="pointer" onClick={() => setLogin(true)}>
+              Login
             </Text>
-            <Text>
-              <Input
-                textAlign="center"
+            <Text>|</Text>
+            <Text cursor="pointer" onClick={() => setRegister(true)}>
+              Register
+            </Text>
+          </HStack>
+          <HStack
+            fontFamily="CeraPRO-light"
+            fontSize="14px"
+            color="#555555"
+            spacing="0px"
+          >
+            <HStack mt="5px" border="1px solid #D1CDCD" h="35px">
+              <Text
                 background="url(https://www.naturesbasket.co.in/Images/edit-pin.png)"
                 backgroundRepeat="no-repeat"
-                backgroundPosition="left"
-                size="xs"
-                width="100px"
-                type="number"
-                placeholder=" Enter Pincode"
-              />
-            </Text>
-            <Spacer></Spacer>
-            <Link to="/Login">Login</Link>
-            <Link to="/Register">Register</Link>
-          </HStack>
-          <HStack spacing="0px">
-            <Input
-              outline="1px solid #B1C4E1"
-              border="0px solid white"
-              w="4xl"
-              borderRadius="6px"
-              size="sm"
-              textAlign="center"
-              placeholder="Start Shoping"
-            ></Input>
+                backgroundPosition="4px"
+                h="100%"
+                border="0px"
+                p="5px 0 0 10px"
+                backgroundColor="#F3E9E9"
+                mr="-7.8px"
+                w="120px"
+                borderRight="1px solid #9E9797"
+              >
+                Enter Pincode
+              </Text>
+              <Text
+                display="flex"
+                backgroundColor="#F3E9E9"
+                borderRight="1px solid #9E9797"
+                h="100%"
+              >
+                <Select
+                  fontFamily="CeraPRO-light"
+                  fontSize="14px"
+                  focusBorderColor="#F3F9F9"
+                  h="100%"
+                  p="5px 1px 0px 1px"
+                >
+                  <option value="">City name</option>
+                  <option>Delhi NCR</option>
+                  <option>Navi Mumbai</option>
+                  <option>Bangalore</option>
+                  <option>Kolkata</option>
+                  <option>Mumbai</option>
+                  <option>Pune</option>
+                </Select>
+              </Text>
+              <Input
+                outline="0"
+                border="0px"
+                w="665px"
+                h="92%"
+                borderRadius="0"
+                size="sm"
+                textAlign="center"
+                placeholder="Start Shoping"
+                focusBorderColor="white"
+              ></Input>
+            </HStack>
             <HStack spacing="10px">
-              <Image src="https://www.naturesbasket.co.in/Images/search-button.jpg"></Image>
+              <Image
+                mt="5px"
+                src="https://www.naturesbasket.co.in/Images/search-button.jpg"
+              ></Image>
               <Image
                 w="21px"
                 h="21px"

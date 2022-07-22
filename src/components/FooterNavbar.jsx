@@ -7,7 +7,7 @@ export default function FooterNavbar() {
       fontFamily="CeraPRO-light"
       display="flex"
       mt="20px"
-      border="1px solid #999999"
+      borderTop="1px solid #999999"
       p="10px 0px 40px"
     >
       <Text m="0px 4px">
