@@ -1,11 +1,14 @@
-import { Box, HStack, Image, Select, Text } from "@chakra-ui/react";
+import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { useState } from "react";
-import HomePageBody from "./HomePageBody";
+import GiftPage from "./GiftPage";
 
-export default function Navbar() {
+export default function Navbar({ setHome }) {
   const [list, setList] = useState(false);
-  // console.log(list);
+  const show = () => {
+    setHome(false);
+  };
+
   return (
     <Box
       w="100%"
@@ -25,6 +28,7 @@ export default function Navbar() {
               justify="center"
             >
               <Text
+                onClick={() => setHome(true)}
                 letterSpacing="2px"
                 border="0px"
                 p="10px 0px 10px 0px"
@@ -41,7 +45,7 @@ export default function Navbar() {
           <Tab p="0" h="40px" fontSize="15px">
             MY ORDERS
           </Tab>
-          <Tab p="0" h="40px" fontSize="15px">
+          <Tab onClick={show} p="0" h="40px" fontSize="15px">
             GIFTING
           </Tab>
           <Tab p="0" h="40px" fontSize="15px">
@@ -108,14 +112,15 @@ export default function Navbar() {
                 Packing Metarials
               </Text>
             </Box>
-            <HomePageBody />
           </TabPanel>
-          <TabPanel>1</TabPanel>
-          <TabPanel>2</TabPanel>
-          <TabPanel>3</TabPanel>
-          <TabPanel>1</TabPanel>
-          <TabPanel>2</TabPanel>
-          <TabPanel>3</TabPanel>
+          <TabPanel></TabPanel>
+          <TabPanel>
+            <GiftPage />
+          </TabPanel>
+          <TabPanel></TabPanel>
+          <TabPanel></TabPanel>
+          <TabPanel></TabPanel>
+          <TabPanel></TabPanel>
         </TabPanels>
       </Tabs>
     </Box>
