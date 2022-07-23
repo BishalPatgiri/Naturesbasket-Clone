@@ -1,4 +1,4 @@
-import { Box, Select } from "@chakra-ui/react";
+import { Box, HStack, Image, Select, Text } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { useState } from "react";
 import HomePageBody from "./HomePageBody";
@@ -17,18 +17,26 @@ export default function Navbar() {
       <Tabs>
         <TabList h="40px" display="flex" justifyContent="space-between">
           <Tab border="0px">
-            <Select
-              bgColor="blackAlpha.100"
-              letterSpacing="3px"
-              mr="15px"
+            <HStack
               ml="-17px"
-              w="300px"
-              border="0px"
-              color="red"
-              placeholder="SHOP BY CATEGORY"
-              onMouseOver={() => setList(true)}
-              onMouseOut={() => setList(false)}
-            ></Select>
+              w="250px"
+              mr="15px"
+              bgColor="blackAlpha.100"
+              justify="center"
+            >
+              <Text
+                letterSpacing="2px"
+                border="0px"
+                p="10px 0px 10px 0px"
+                color="red"
+                placeholder=""
+                onMouseOver={() => setList(true)}
+                onMouseOut={() => setList(false)}
+              >
+                SHOP BY CATEGORY
+              </Text>
+              <Image src="https://www.naturesbasket.co.in/Images/menuicon1.png" />
+            </HStack>
           </Tab>
           <Tab p="0" h="40px" fontSize="15px">
             MY ORDERS
@@ -54,7 +62,52 @@ export default function Navbar() {
         </TabList>
         <TabPanels>
           <TabPanel p="0">
-            {/* <h1>Hellow</h1> */}
+            <Box
+              p="5px 15px"
+              w="250px"
+              bgColor="white"
+              fontFamily="CeraPRO-light"
+              fontSize="14px"
+              textAlign="left"
+              position="absolute"
+              display={list ? "block" : "none"}
+              onMouseOver={() => setList(true)}
+              onMouseOut={() => setList(false)}
+            >
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Gift Hampers
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Fruits & Vigetables
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Cheese, Meat & food platters
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Delicatessen & Cheese
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                International Cuisine
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Health
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Confectionary & Patisserie
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Meats, Seafood and Eggs
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Breakfast & Dairy
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                The Good Food Cafe
+              </Text>
+              <Text p="5px 0px" borderBottom="1px solid #BDB8B8">
+                Packing Metarials
+              </Text>
+            </Box>
             <HomePageBody />
           </TabPanel>
           <TabPanel>1</TabPanel>

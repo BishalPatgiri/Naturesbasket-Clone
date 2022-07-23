@@ -8,7 +8,9 @@ export default function PaymentMethod() {
       fontSize="13px"
       fontFamily="CeraPro-Light"
       p="5px 10px"
-      border="1px solid #888888"
+      border="0"
+      borderTop="1px solid #888888"
+      borderBottom="1px solid #888888"
     >
       <Text mt="10px" mr="10px">
         Payment Method
