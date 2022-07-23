@@ -7,13 +7,26 @@ import {
   HStack,
   Select
 } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
-export default function Header({ setLogin, setRegister }) {
+export default function Header({ setSmall, setLogin, setRegister }) {
+  const navigate = useNavigate();
+
+  const GoCart = () => {
+    navigate("/cart");
+  };
+
+  const goHome = () => {
+    navigate("/");
+  };
+
   return (
     <Box position="sticky" top="1px" backgroundColor="white">
       <HStack spacing="20px" w="100%">
         <Box>
           <Image
+            cursor="pointer"
+            onClick={goHome}
             w="315px"
             h="85px"
             src="https://www.naturesbasket.co.in/Images/logosnew.png?v=2"
@@ -94,20 +107,25 @@ export default function Header({ setLogin, setRegister }) {
                 focusBorderColor="white"
               ></Input>
             </HStack>
-            <HStack spacing="10px">
+            <HStack spacing="10px" onMouseLeave={() => setSmall(false)}>
               <Image
                 mt="5px"
                 src="https://www.naturesbasket.co.in/Images/search-button.jpg"
               ></Image>
+
               <Image
                 w="21px"
                 h="21px"
                 src="https://www.clipartmax.com/png/full/0-7626_green-star-clip-art-star-icon-png-green.png"
               ></Image>
+              <Text fontSize="25px">|</Text>
               <Image
+                onMouseEnter={() => setSmall(true)}
                 w="21px"
                 h="21px"
+                cursor="pointer"
                 src="https://elasq.com/wp-content/uploads/2021/08/cart5.png"
+                onClick={GoCart}
               ></Image>
             </HStack>
           </HStack>
