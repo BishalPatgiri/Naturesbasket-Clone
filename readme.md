@@ -2,7 +2,7 @@
 #### Done by: Bishal Patgiri
 ## Main website link
 ```
-https://www.naturesbasket.co.in/
+[Natursbasket](https://www.naturesbasket.co.in/)
 ```
 ## Tech Stack used in this project:
 - HTML
