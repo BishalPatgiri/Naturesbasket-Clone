@@ -1,7 +1,7 @@
 ## Natures Basket Website Clone
 #### Done by: Bishal Patgiri
 ## Main website link
-[Natursbasket](https://www.naturesbasket.co.in/)
+[Natursbasket Website](https://www.naturesbasket.co.in/)
 ## Tech Stack used in this project:
 - HTML
 - CSS
