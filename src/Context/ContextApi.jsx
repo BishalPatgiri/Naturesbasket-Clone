@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 
-export const BoxContext = React.createContext();
+export const AuthContext = React.createContext();
 
-export default function BoxContextProvider({ children }) {
-  const [box, setBox] = useState(false);
-
+export function AuthContextProvider({ children }) {
+  const [auth, setAuth] = useState(false);
   const Toggle = () => {
-    setBox(box === false ? box === true : box === false);
+    setAuth(true);
   };
-
   return (
-    <BoxContext.Provider value={{ box, Toggle }}>
+    <AuthContext.Provider value={{ auth, Toggle }}>
       {children}
-    </BoxContext.Provider>
+    </AuthContext.Provider>
   );
 }

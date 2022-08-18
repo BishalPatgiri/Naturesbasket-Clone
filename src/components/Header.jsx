@@ -8,7 +8,6 @@ import {
   Select
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-
 export default function Header({ setSmall, setLogin, setRegister }) {
   const navigate = useNavigate();
 
@@ -73,7 +72,7 @@ export default function Header({ setSmall, setLogin, setRegister }) {
               >
                 Enter Pincode
               </Text>
-              <Text
+              <Box
                 display="flex"
                 backgroundColor="#F3E9E9"
                 borderRight="1px solid #9E9797"
@@ -94,7 +93,7 @@ export default function Header({ setSmall, setLogin, setRegister }) {
                   <option>Mumbai</option>
                   <option>Pune</option>
                 </Select>
-              </Text>
+              </Box>
               <Input
                 outline="0"
                 border="0px"
@@ -121,10 +120,10 @@ export default function Header({ setSmall, setLogin, setRegister }) {
               <Text fontSize="25px">|</Text>
               <Image
                 onMouseEnter={() => setSmall(true)}
-                w="21px"
-                h="21px"
+                w="25px"
+                h="25px"
                 cursor="pointer"
-                src="https://elasq.com/wp-content/uploads/2021/08/cart5.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbs-FxqKI5BHf-6HpTRHNtKdXTxpBB6TxB6UHHCFi_LhMLSANgyOgpv9AMb35U7icVqnI&usqp=CAU"
                 onClick={GoCart}
               ></Image>
             </HStack>

@@ -1,11 +1,11 @@
+import './App.css';
 import { Box } from "@chakra-ui/react";
 import { useState } from "react";
 import SmallCart from "./components/SmallCart";
 import SmallLogo from "./components/SmallLogo";
 import AllRotes from "./Routes/AllRoutes";
-import "./styles.css";
 
-export default function App() {
+function App() {
   const [small, setSmall] = useState(false);
   return (
     <Box className="App">
@@ -15,3 +15,5 @@ export default function App() {
     </Box>
   );
 }
+
+export default App;

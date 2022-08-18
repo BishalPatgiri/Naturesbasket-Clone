@@ -6,12 +6,11 @@ export default function Register({ setRegister }) {
       fontSize="14px"
       fontFamily="CeraPRO-light"
       display="flex"
-      gap="10px"
+      gap="20px"
       h="115px"
       alignItems="center"
       background="#EDEDED"
-      pl="400px"
-      pr="50px"
+      pl="200px"
     >
       <Input
         boxShadow="0 3px 3px #bdbdbd"
@@ -21,7 +20,27 @@ export default function Register({ setRegister }) {
         h="36px"
         w="220px"
         bgColor="white"
-        placeholder="Mobile No"
+        placeholder="Email"
+      />
+      <Input
+        boxShadow="0 3px 3px #bdbdbd"
+        p="0 0 0 30px"
+        background="#ffffff url(https://www.naturesbasket.co.in/Images/login-place-icon.png) no-repeat 5px -75px"
+        borderRadius="1px"
+        h="36px"
+        w="220px"
+        bgColor="white"
+        placeholder="Password"
+      />
+      <Input
+        boxShadow="0 3px 3px #bdbdbd"
+        p="0 0 0 30px"
+        background="#ffffff url(https://www.naturesbasket.co.in/Images/login-place-icon.png) no-repeat 5px -75px"
+        borderRadius="1px"
+        h="36px"
+        w="220px"
+        bgColor="white"
+        placeholder="Mobile No(Not mandetory)"
       />
       <Button
         w="102px"
@@ -31,6 +50,7 @@ export default function Register({ setRegister }) {
         color="white"
         h="36px"
         fontSize="15px"
+        onClick={() => setRegister(true)}
       >
         CONTINUE
       </Button>

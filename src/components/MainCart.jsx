@@ -3,22 +3,42 @@ import Header from "./Header";
 import Navbar from "./Navbar";
 import { useEffect, useState } from "react";
 import { buyData } from "./Api/api";
+import axios from "axios";
 
 export default function MainCart({ setSmall }) {
   const [data, setData] = useState([]);
   const [qty, setQty] = useState(1);
-  const inc = () => {
+  const inc = (id) => {
     setQty(qty + 1);
+    axios
+      .patch(`https://c4-project-data.herokuapp.com/buy/${id}`, { qty: qty })
+      .then((res) => {
+        buyData()
+          .then((res) => res.json())
+          .then((res) => setData(res));
+      })
+      .catch((e) => console.log(e));
   };
-  const dec = () => {
+
+  const dec = (id) => {
     setQty(qty >= 2 ? qty - 1 : qty);
+    axios
+      .patch(`https://c4-project-data.herokuapp.com/buy/${id}`, { qty: qty })
+      .then((res) => {
+        buyData()
+          .then((res) => res.json())
+          .then((res) => setData(res));
+      })
+      .catch((e) => console.log(e));
   };
 
   useEffect(() => {
-    buyData()
-      .then((res) => res.json())
-      .then((res) => setData(res));
-  });
+    if (data.length === 0) {
+      buyData()
+        .then((res) => res.json())
+        .then((res) => setData(res));
+    }
+  }, [data]);
   return (
     <Box w="85%" m="auto" fontFamily="CeraPRO-light" fontSize="16px">
       <Header setSmall={setSmall} />
@@ -62,6 +82,7 @@ export default function MainCart({ setSmall }) {
         </HStack>
         {data.map((ele) => (
           <Box>
+            {/* {setQty(ele.qty)} */}
             <Box p="8px" textAlign="left" borderBottom="1px solid #938D8D">
               <Text fontWeight="bold">{ele.title}</Text>
             </Box>
@@ -80,16 +101,16 @@ export default function MainCart({ setSmall }) {
               <Text w="12%">{ele.dis}</Text>
               <Box w="12%" display="flex">
                 <Button
-                  onClick={inc}
+                  onClick={() => inc(ele.id)}
                   size="sm"
                   colorScheme="green"
                   variant="solid"
                 >
                   +
                 </Button>
-                <Text m="5px 10px">{qty}</Text>
+                <Text m="5px 10px">{ele.qty}</Text>
                 <Button
-                  onClick={dec}
+                  onClick={() => dec(ele.id)}
                   size="sm"
                   colorScheme="green"
                   variant="solid"
@@ -101,27 +122,6 @@ export default function MainCart({ setSmall }) {
             </HStack>
           </Box>
         ))}
-        {/* <Box p="8px" textAlign="left" borderBottom="1px solid #938D8D">
-          <Text fontWeight="bold">Title</Text>
-        </Box> */}
-        {/* <HStack m="10px 0px" bgColor="#FAD9D9" p="8px" textAlign="left">
-          <Box display="flex" w="50%">
-            <Image src="" />
-            <Text>Name</Text>
-          </Box>
-          <Text w="12%">Price</Text>
-          <Text w="12%">Discount</Text>
-          <Box w="12%" display="flex">
-            <Button onClick={inc} size="sm" colorScheme="green" variant="solid">
-              +
-            </Button>
-            <Text m="5px 10px">{qty}</Text>
-            <Button onClick={dec} size="sm" colorScheme="green" variant="solid">
-              -
-            </Button>
-          </Box>
-          <Text w="12%">Subtotal</Text>
-        </HStack> */}
       </Box>
     </Box>
   );

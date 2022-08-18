@@ -8,13 +8,18 @@ export default function ProductDetail() {
         m="auto"
         border="1px solid red"
         borderRadius="20px"
-        p="0"
+        p="4px"
         fontSize="xs"
+        mt="10px"
       >
         DELIVERY IN 90 MINUTES
       </Box>
-      <Text fontSize="sm">HTAPIOUCA FLOUR</Text>
-      <Text fontSize="sm">1 Pc</Text>
+      <Text mt="10px" fontSize="sm">
+        HTAPIOUCA FLOUR
+      </Text>
+      <Text mb="8px" fontSize="sm">
+        1 Pc
+      </Text>
       <HStack w="60%" m="auto" justify="space-between">
         <Button
           variant="none"
@@ -31,12 +36,12 @@ export default function ProductDetail() {
           w="45%"
           h="25px"
           p="8px"
-          background="url(https://www.naturesbasket.co.in/Images/CartAddBtn.PNG)"
-          backgroundRepeat="no-repeat"
-          backgroundPosition="center"
-          backgroundSize="100% 100%"
+          backgroundColor="yellowgreen"
+          color="white"
           fontSize="xs"
-        ></Button>
+        >
+          ADD
+        </Button>
       </HStack>
     </Box>
   );

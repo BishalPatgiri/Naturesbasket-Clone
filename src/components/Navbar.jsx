@@ -2,7 +2,6 @@ import { Box, HStack, Image, Text } from "@chakra-ui/react";
 import { Tabs, TabList, TabPanels, Tab, TabPanel } from "@chakra-ui/react";
 import { useState } from "react";
 import GiftPage from "./GiftPage";
-
 export default function Navbar({ setHome }) {
   const [list, setList] = useState(false);
   const show = () => {
@@ -13,8 +12,8 @@ export default function Navbar({ setHome }) {
     <Box
       w="100%"
       m="auto"
-      borderTopLeftRadius="10px"
-      borderToprightRadius="10px"
+      // borderTopLeftRadius="10px"
+      // borderToprightRadius="10px"
       borderTop="1px solid #BAACAC"
     >
       <Tabs>

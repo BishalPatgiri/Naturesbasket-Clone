@@ -5,12 +5,13 @@ export default function SmallLogo() {
   const [message, setMessage] = useState(false);
   return (
     <Box
-      h="90px"
-      w="300px"
-      cursor="pointer"
-      position="fixed"
-      bottom="90px"
-      right="20px"
+      // h="90px"
+      // w="300px"
+      // cursor="pointer"
+      // position="fixed"
+      // bottom="130px"
+      // right="20px"
+      className="logo"
     >
       <Box
         fontSize="14px"
