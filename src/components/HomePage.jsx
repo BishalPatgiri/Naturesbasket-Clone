@@ -5,6 +5,8 @@ import Login from "./Login";
 import Register from "./Register";
 import { useState } from "react";
 import HomePageBody from "./HomePageBody";
+import { PhoneIcon, AddIcon, WarningIcon, HamburgerIcon } from '@chakra-ui/icons'
+
 
 export default function HomePage({ setSmall }) {
   const [login, setLogin] = useState(false);
@@ -14,7 +16,7 @@ export default function HomePage({ setSmall }) {
     <Box>
       <Box>{login && <Login setLogin={setLogin} />}</Box>
       <Box>{register && <Register setRegister={setRegister} />}</Box>
-      <Box w="85%" m="auto">
+      <Box w={["100%","100%","98%","85%"]} m="auto">
         <Header
           setSmall={setSmall}
           setLogin={setLogin}

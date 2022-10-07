@@ -5,7 +5,7 @@ import Description2 from "./Description2";
 import Footer from "./Footer";
 import PaymentMethod from "./PaymentMethods";
 import ProductDetail from "./ProductDetail";
-import Slider from "./Slider/Slider";
+import { Slider2 } from "./Slider2";
 
 const sty = {
   boxShadow:
@@ -25,60 +25,60 @@ export default function HomePageBody() {
         w="100%"
         src="https://gnbdevcdn.s3-ap-southeast-1.amazonaws.com/Marketing/d8cc09f5-5d68-4853-ae9a-233ceabe3acd.jpg?v=1"
       />
-      <Slider />
-      <HStack p="0px 8px" justify="space-between">
+      <Slider2 />
+      <HStack p="0px 6px" justify="space-between">
         <Image
           borderRadius="10px"
           boxShadow="2px 5px #a09191bd"
-          w="420px"
-          h="205px"
+          w="32%"
+          h={["70px","165px","185","205px"]}
           src="https://www.naturesbasket.co.in/Images/NaturesBasketGifting.jpeg?v=7"
         />
         <Image
           borderRadius="10px"
           boxShadow="2px 5px #a09191bd"
-          w="420px"
-          h="205px"
+          w="32%"
+          h={["70px","165px","185","205px"]}
           src="https://www.naturesbasket.co.in/Images/Japanesecuisine-webbox.png?v=10"
         />
         <Image
           borderRadius="10px"
           boxShadow="2px 5px #a09191bd"
-          w="420px"
-          h="205px"
+          w="32%"
+          h={["70px","165px","185","205px"]}
           src="https://www.naturesbasket.co.in/Images/Gluten-free-web%20box%20banner.png?v=15"
         />
       </HStack>
       <Text
         mt="15px"
-        fontSize="24px"
+        fontSize={["12px","16px","20px","24px"]}
         fontFamily="CeraPRO-Regular"
         textAlign="center"
         p="0 30px"
       >
         SHOP BY CATEGORY
       </Text>
-      <HStack p="0px 8px" justify="space-between" mt="10px">
+      <HStack p="0px 6px" justify="space-between" mt="10px">
         <Image
-          w="290px"
+          w="24%"
           borderRadius="10px"
           boxShadow="5px 5px 5px 5px rgb(199 138 102 / 37%)"
           src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Exoticvegetablesweb.png"
         />
         <Image
-          w="290px"
+          w="24%"
           borderRadius="10px"
           boxShadow="5px 5px 5px 5px rgb(199 138 102 / 37%)"
           src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/coldcutweb.png"
         />
         <Image
-          w="290px"
+          w="24%"
           borderRadius="10px"
           boxShadow="5px 5px 5px 5px rgb(199 138 102 / 37%)"
           src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/Freshartisinalbreadsweb.png"
         />
         <Image
-          w="290px"
+          w="24%"
           borderRadius="10px"
           boxShadow="5px 5px 5px 5px rgb(199 138 102 / 37%)"
           src="https://gnbdevcdn.s3.amazonaws.com/Images/Category/dailyessentialsweb.png"
@@ -89,144 +89,128 @@ export default function HomePageBody() {
         mt="15px"
         textAlign="left"
         justify="space-between"
-        lineHeight="35px"
+        lineHeight={["18px","22px","28px","35px"]}
       >
         <Box w="21%">
-          <Text as="h3">Exotic Vigitables</Text>
+          <Text fontSize={["9px","11px","13px","16px"]} fontWeight="bold">Exotic Vigitables</Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Asparagus Artichokes
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Avocados Peppers
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Broccoli Zucchini
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             View All
           </Text>
         </Box>
         <Box w="21%">
-          <Text as="h3">Exotic Vigitables</Text>
+          <Text fontSize={["9px","11px","13px","16px"]} fontWeight="bold">Exotic Vigitables</Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Chicken Cuts Lollipops Mince
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Fish Other Seafood
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Fresh Kebabs Others
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             View All
           </Text>
         </Box>
         <Box w="21%">
-          <Text as="h3">Exotic Vigitables</Text>
+          <Text fontSize={["9px","11px","13px","16px"]} fontWeight="bold">Exotic Vigitables</Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Asparagus Artichokes
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Avocados Peppers
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Broccoli Zucchini
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             View All
           </Text>
         </Box>
         <Box w="21%">
-          <Text as="h3">Exotic Vigitables</Text>
+          <Text fontSize={["9px","11px","13px","16px"]} fontWeight="bold">Exotic Vigitables</Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Asparagus Artichokes
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Avocados Peppers
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             Broccoli Zucchini
           </Text>
           <Text
-            fontSize="13px"
             color="#333333"
             borderBottom="1px solid #999999"
-            as="p"
+            fontSize={["8px","10px","12px","14px"]}
           >
             View All
           </Text>
@@ -235,21 +219,21 @@ export default function HomePageBody() {
       <Image
         mt="20px"
         src="https://www.naturesbasket.co.in/Images/homepageblogbanner/NB_pastaBlog_banner.jpg"
-        h="355px"
-        w="1350"
+        h={["140px","190px","250px","300px"]}
+        w="100%"
         borderRadius="10px"
       />
       <Text
         mt="15px"
-        fontSize="24px"
+        fontSize={["12px","16px","20px","24px"]}
         fontFamily="CeraPRO-Regular"
         textAlign="center"
         p="0 30px"
       >
         WHAT'S TRENDING
       </Text>
-      <HStack mt="15px">
-        <Box
+      <HStack mt="15px" justifyContent="space-between">
+        <Box w="24%"
           p="10px"
           onMouseEnter={() => {
             setHov(true);
@@ -273,6 +257,7 @@ export default function HomePageBody() {
           </Box>
         </Box>
         <Box
+        w="24%"
           p="10px"
           onMouseEnter={() => {
             setHov(true);
@@ -296,6 +281,7 @@ export default function HomePageBody() {
           </Box>
         </Box>
         <Box
+        w="24%"
           p="10px"
           onMouseEnter={() => {
             setHov(true);
@@ -319,6 +305,7 @@ export default function HomePageBody() {
           </Box>
         </Box>
         <Box
+        w="24%"
           p="10px"
           onMouseEnter={() => {
             setHov(true);
@@ -344,7 +331,7 @@ export default function HomePageBody() {
       </HStack>
       <Text
         mt="15px"
-        fontSize="24px"
+        fontSize={["12px","16px","20px","24px"]}
         fontFamily="CeraPRO-Regular"
         textAlign="center"
         p="0 30px"
@@ -354,26 +341,26 @@ export default function HomePageBody() {
       <HStack p="0px 8px" mt="10px" justify="space-between" borderRadius="10px">
         <Image
           src="https://www.naturesbasket.co.in/Images/PhotoGallery/SanjeevKapoor_at_KolkataGallary.jpg"
-          h="340px"
+          h={["150px","210px","280px","340px"]}
           w="32.5%"
           borderRadius="10px"
         />
         <Image
           src="https://www.naturesbasket.co.in/Images/PhotoGallery/IndiaSportsHonours2019NaturesBasketGiftingBNR.jpg?v=2"
-          h="340px"
+          h={["150px","210px","280px","340px"]}
           w="32.5%"
           borderRadius="10px"
         />
         <Image
           src="https://www.naturesbasket.co.in/Images/PhotoGallery/SaranshHome.png?v=2"
-          h="340px"
+          h={["150px","210px","280px","340px"]}
           w="32.5%"
           borderRadius="10px"
         />
       </HStack>
       <Text
         mt="15px"
-        fontSize="24px"
+        fontSize={["12px","16px","20px","24px"]}
         fontFamily="CeraPRO-Regular"
         textAlign="center"
         p="0 30px"
@@ -381,11 +368,11 @@ export default function HomePageBody() {
         SHOP BY WORLD BRANDS
       </Text>
       <HStack p="0px 20px" mt="20px" justify="space-between">
-        <Image src="https://d1z88p83zuviay.cloudfront.net/Images/davidoff-cafe.jpg"></Image>
-        <Image src="https://d1z88p83zuviay.cloudfront.net/Images/lexlusif.jpg"></Image>
-        <Image src="https://d1z88p83zuviay.cloudfront.net/Images/healthy.jpg"></Image>
-        <Image src="https://d1z88p83zuviay.cloudfront.net/Images/cambay-tiger.jpg"></Image>
-        <Image src="https://d1z88p83zuviay.cloudfront.net/Images/real-thai.jpg"></Image>
+        <Image w={"19%"} src="https://d1z88p83zuviay.cloudfront.net/Images/davidoff-cafe.jpg"></Image>
+        <Image w={"19%"} src="https://d1z88p83zuviay.cloudfront.net/Images/lexlusif.jpg"></Image>
+        <Image w={"19%"} src="https://d1z88p83zuviay.cloudfront.net/Images/healthy.jpg"></Image>
+        <Image w={"19%"} src="https://d1z88p83zuviay.cloudfront.net/Images/cambay-tiger.jpg"></Image>
+        <Image w={"19%"} src="https://d1z88p83zuviay.cloudfront.net/Images/real-thai.jpg"></Image>
       </HStack>
       <Description1 />
       <Description2 />

@@ -11,84 +11,85 @@ export default function Description2() {
       textAlign="left"
       p="0px 35px"
     >
-      <Box>
-        <Text mb="10px" fontWeight="bold">
+      <Box w="18%">
+        <Text mb="10px" fontWeight="bold" fontSize={["8px","13px","15px","17px"]} >
           DOWNLOAD THE APP
         </Text>
         <a href="https://play.google.com/store/apps/details?id=com.godrej.naturesbasketltd">
           <Image
-            h="57px"
+            h={["10px","25px","35px","57px"]}
             w="170px"
             src="https://cdn.worldvectorlogo.com/logos/get-it-on-google-play.svg"
           />
         </a>
         <a href="https://apps.apple.com/in/app/natures-basket/id1013402486">
           <Image
-            h="57px"
+            h={["10px","25px","35px","57px"]}
             w="170px"
             src="https://cdn.worldvectorlogo.com/logos/available-on-the-app-store.svg"
           />
         </a>
       </Box>
-      <Box>
+      <Box w="18%">
         <Box>
-          <Text mb="10px" fontWeight="bold">
+          <Text mb="10px" fontWeight="bold" fontSize={["8px","13px","15px","17px"]}>
             ABOUT US
           </Text>
-          <Text>About Us</Text>
-          <Text>Our Vesion And Purpose</Text>
-          <Text>Quality Standards</Text>
-          <Text>Awars</Text>
-          <Text>FAQs</Text>
+          <Text fontSize={["8px","10px","13px","16px"]}>About Us</Text>
+          <Text fontSize={["8px","10px","13px","16px"]}>Our Vesion And Purpose</Text>
+          <Text fontSize={["8px","10px","13px","16px"]}>Quality Standards</Text>
+          <Text fontSize={["8px","10px","13px","16px"]}>Awars</Text>
+          <Text fontSize={["8px","10px","13px","16px"]}>FAQs</Text>
         </Box>
         <Box>
-          <Text mt="20px" mb="10px" fontWeight="bold">
+          <Text mt="20px" mb="10px" fontWeight="bold" fontSize={["8px","13px","15px","17px"]}>
             CAREERS
           </Text>
-          <Text>Work with us</Text>
+          <Text fontSize={["8px","10px","13px","16px"]}>Work with us</Text>
         </Box>
       </Box>
-      <Box>
-        <Text mb="10px" fontWeight="bold">
+      <Box w="18%">
+        <Text mb="10px" fontWeight="bold" fontSize={["8px","13px","15px","17px"]}>
           NEWS AND EVENTS
         </Text>
-        <Text>Press Release</Text>
-        <Text>Newsletters</Text>
-        <Text>Events</Text>
-        <Text>Photo Galaries</Text>
-        <Text>NBTV</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>Press Release</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>Newsletters</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>Events</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>Photo Galaries</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>NBTV</Text>
       </Box>
       <Box>
-        <Text mb="10px" fontWeight="bold">
+        <Text mb="10px" fontWeight="bold" fontSize={["8px","13px","15px","17px"]}>
           NEWS AND EVENTS
         </Text>
-        <Text>Press Release</Text>
-        <Text>Newsletters</Text>
-        <Text>Events</Text>
-        <Text>Photo Galaries</Text>
-        <Text>NBTV</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>Press Release</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>Newsletters</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>Events</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>Photo Galaries</Text>
+        <Text fontSize={["8px","10px","13px","16px"]}>NBTV</Text>
       </Box>
-      <Box>
-        <Text mb="10px" fontWeight="bold">
+      <Box w="18%">
+        <Text mb="10px" fontWeight="bold" fontSize={["8px","13px","15px","17px"]}>
           SIGN UP TO STAY UPDATED
         </Text>
         <Input
           m="20px 0 0"
-          w="292px"
-          h="47px"
+          w="100%"
+          h={["15px","25px","35","42px"]}
           p="0 20px"
-          placeholder="Enter Your Enail Address"
+          placeholder="Enter Your Email Address"
         />
         <br />
         <Button
-          w="110px"
-          h="33px"
+          w={["85%","70%","50%","45%"]}
+          h={["15px","20px","25px","33px"]}
           m="15px 0 0"
           p="8px 20px"
           bgColor="#99C655"
-          borderRadius="5px"
+          borderRadius="4px"
           color="White"
           variant="none"
+          fontSize={["7px","10px","12px"]}
         >
           SUBSCRIBE
         </Button>

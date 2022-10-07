@@ -4,7 +4,7 @@ export default function PaymentMethod() {
   return (
     <Box
       mt="20px"
-      display="flex"
+      display={["block","block","block","flex"]}
       fontSize="13px"
       fontFamily="CeraPro-Light"
       p="5px 10px"

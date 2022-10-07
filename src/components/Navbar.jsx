@@ -16,13 +16,12 @@ export default function Navbar({ setHome }) {
       // borderToprightRadius="10px"
       borderTop="1px solid #BAACAC"
     >
-      <Tabs>
-        <TabList h="40px" display="flex" justifyContent="space-between">
-          <Tab border="0px">
+      <Tabs >
+        <TabList h={["25px","30px","35px","45px"]} display="flex" justifyContent="space-between">
+          <Tab p="0" border={"0px"}>
             <HStack
-              ml="-17px"
-              w="250px"
-              mr="15px"
+              h="100%"
+              w="100%"
               bgColor="blackAlpha.100"
               justify="center"
             >
@@ -30,36 +29,35 @@ export default function Navbar({ setHome }) {
                 onClick={() => setHome(true)}
                 letterSpacing="2px"
                 border="0px"
-                p="10px 0px 10px 0px"
                 color="red"
                 placeholder=""
                 onMouseOver={() => setList(true)}
-                onMouseOut={() => setList(false)}
+                onMouseOut={() => setList(false)} fontSize={["6px","8px","12px","15px"]}
               >
                 SHOP BY CATEGORY
               </Text>
               <Image src="https://www.naturesbasket.co.in/Images/menuicon1.png" />
             </HStack>
           </Tab>
-          <Tab p="0" h="40px" fontSize="15px">
+          <Tab p="0" fontSize={["6px","8px","12px","15px"]}>
             MY ORDERS
           </Tab>
-          <Tab onClick={show} p="0" h="40px" fontSize="15px">
+          <Tab onClick={show} p="0" fontSize={["6px","8px","12px","15px"]}>
             GIFTING
           </Tab>
-          <Tab p="0" h="40px" fontSize="15px">
+          <Tab p="0" fontSize={["6px","8px","12px","15px"]}>
             REWARDS
           </Tab>
-          <Tab p="0" h="40px" fontSize="15px">
+          <Tab p="0" fontSize={["6px","8px","12px","15px"]}>
             BLOG
           </Tab>
-          <Tab p="0" h="40px" fontSize="15px">
+          <Tab p="0" fontSize={["6px","8px","12px","15px"]}>
             OFFERS
           </Tab>
-          <Tab p="0" h="40px" fontSize="15px">
+          <Tab p="0" fontSize={["6px","8px","12px","15px"]}>
             CONNOISSEUR'S SELECTIONS
           </Tab>
-          <Tab p="0" h="40px" fontSize="15px">
+          <Tab p="0" fontSize={["6px","8px","12px","15px"]}>
             BOOK STORE VISIT
           </Tab>
         </TabList>

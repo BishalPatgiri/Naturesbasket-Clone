@@ -5,7 +5,7 @@ export default function Description1() {
     <Box textAlign="left" lineHeight="20px" p="0px 5px">
       <Box>
         <Text
-          fontSize="22px"
+          fontSize={["15px","17px","20px","22px"]}
           fontWeight="bold"
           mt="20px"
           fontFamily="CeraPRO-Medium"
@@ -13,7 +13,7 @@ export default function Description1() {
         >
           Online Grocery Store India
         </Text>
-        <Text fontSize="17px" fontFamily="CeraPRO-light">
+        <Text fontSize={["10px","13px","15px","17px"]} fontFamily="CeraPRO-light">
           Nature’s Basket is a grocery store operating in Mumbai, Bangalore and
           Pune with deliveries to all cities across India including Hyderabad,
           Delhi, Kolkata, Chennai, Surat and more. We offer a wide range of food
@@ -32,14 +32,14 @@ export default function Description1() {
       <Box>
         <Text
           fontFamily="CeraPRO-light"
-          fontSize="22px"
+          fontSize={["15px","17px","20px","22px"]}
           fontWeight="bold"
           mt="15px"
           mb="5px"
         >
           Best Online Grocery Supermarket India
         </Text>
-        <Text fontFamily="CeraPRO-light" fontSize="17px">
+        <Text fontFamily="CeraPRO-light" fontSize={["10px","11px","14px","17px"]}>
           With stores in Mumbai, Pune and Bangalore and online delivery
           services, you can now have all your grocery supermarket shopping done
           online. We have a wide range of grocery products to offer at our
@@ -56,14 +56,14 @@ export default function Description1() {
       <Box>
         <Text
           fontFamily="CeraPRO-light"
-          fontSize="22px"
+          fontSize={["15px","17px","20px","22px"]}
           fontWeight="bold"
           mt="15px"
           mb="5px"
         >
           Online Grocery Supermarket Shopping India
         </Text>
-        <Text fontFamily="CeraPRO-light" fontSize="17px">
+        <Text fontFamily="CeraPRO-light" fontSize={["10px","11px","14px","17px"]}>
           With our wide range of groceries available, Nature’s Basket is a large
           online supermarket and grocery store for all your everyday food needs.
           We offer you the best quality grocery products which you can buy

@@ -6,43 +6,46 @@ export default function ProductDetail() {
       <Box
         w="90%"
         m="auto"
-        border="1px solid red"
+        border={["0","1px solid red","1px solid red","1px solid red"]}
         borderRadius="20px"
         p="4px"
-        fontSize="xs"
+        fontSize={["9px","11px","12px","14px"]}
         mt="10px"
       >
         DELIVERY IN 90 MINUTES
       </Box>
-      <Text mt="10px" fontSize="sm">
+      <Text mt="10px" fontSize={["9px","11px","12px","14px"]}>
         HTAPIOUCA FLOUR
       </Text>
-      <Text mb="8px" fontSize="sm">
+      <Text mb="8px" fontSize={["9px","11px","12px","14px"]}>
         1 Pc
       </Text>
-      <HStack w="60%" m="auto" justify="space-between">
+      <Box display={["block","flex","flex","flex"]} w={["95%","85%","75%","60%"]} m="auto" justifyContent="space-between">
+        <Box w="48%">
         <Button
           variant="none"
-          w="45%"
-          p="8px"
+          w="100%"
+          p={["6px"]}
           h="25px"
-          border="1px solid green"
-          fontSize="xs"
+          fontSize={["8px","10px","12px","14px"]}
         >
           MRP ₹250
         </Button>
+        </Box>
+        <Box w="48%">
         <Button
           variant="none"
-          w="45%"
+          w={"100%"}
           h="25px"
-          p="8px"
+          p={["6px"]}
           backgroundColor="yellowgreen"
           color="white"
-          fontSize="xs"
+          fontSize={["8px","11px","12px","14px"]}
         >
           ADD
         </Button>
-      </HStack>
+        </Box>
+      </Box>
     </Box>
   );
 }

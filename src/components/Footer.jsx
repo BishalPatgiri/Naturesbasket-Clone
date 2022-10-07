@@ -13,116 +13,116 @@ export default function Footer() {
       >
         <Box>
           <Box>
-            <Text fontWeight="bold">FRESH & FAST</Text>
+            <Text fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>FRESH & FAST</Text>
           </Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               GIFT HAMPERS
             </Text>
-            <Text>Birthday & Anniversary Gift Hampers</Text>
-            <Text>World Cuisine Gift Hampers</Text>
-            <Text>Organic & Health Gift Hampers</Text>
-            <Text>Coffee & Tea Gift Hampers</Text>
-            <Text>Get Well Soon Gift Hampers</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Birthday & Anniversary Gift Hampers</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>World Cuisine Gift Hampers</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Organic & Health Gift Hampers</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Coffee & Tea Gift Hampers</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Get Well Soon Gift Hampers</Text>
           </Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               FRUITS & VIGETABLES
             </Text>
-            <Text>Vegetables</Text>
-            <Text>Exotic Vegetables</Text>
-            <Text>Fruits</Text>
-            <Text>Organic Fruits & Vegetables</Text>
-            <Text>Exotic Fruits</Text>
-            <Text>Canned & Frozen</Text>
-            <Text>Cold - Pressed Fresh Juices</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Vegetables</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Exotic Vegetables</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Fruits</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Organic Fruits & Vegetables</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Exotic Fruits</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Canned & Frozen</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Cold - Pressed Fresh Juices</Text>
           </Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               DELICATESSEN & CHEESE
             </Text>
-            <Text>Fresh Snacks & Party Food</Text>
-            <Text>Antipasti</Text>
-            <Text>Gourmet Cheese Shop</Text>
-            <Text>Cold Cuts & Sausages</Text>
-            <Text>Cheese Spread, Slices & Others</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Fresh Snacks & Party Food</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Antipasti</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Gourmet Cheese Shop</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Cold Cuts & Sausages</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Cheese Spread, Slices & Others</Text>
           </Box>
         </Box>
         <Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               INTERNATINAL CUISINE
             </Text>
-            <Text>Italian & Continental</Text>
-            <Text>Middle-Eastern</Text>
-            <Text>Condiments</Text>
-            <Text>Flours, Grains & More</Text>
-            <Text>Mexican</Text>
-            <Text>Salad Dressing</Text>
-            <Text>Vinegars & Mustards</Text>
-            <Text>Salt, Sugar & Substitutes</Text>
-            <Text>Pan-Asian</Text>
-            <Text>Baking Ingredients</Text>
-            <Text>Oils</Text>
-            <Text>Soups</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Italian & Continental</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Middle-Eastern</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Condiments</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Flours, Grains & More</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Mexican</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Salad Dressing</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Vinegars & Mustards</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Salt, Sugar & Substitutes</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Pan-Asian</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Baking Ingredients</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Oils</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Soups</Text>
           </Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               HELP
             </Text>
-            <Text>Weight Management Foods</Text>
-            <Text>Heart - Healthy Foods</Text>
-            <Text>Wellness & Immunity Boosters</Text>
-            <Text>Diabetic - Friendly Foods</Text>
-            <Text>Problem Solution Foods</Text>
-            <Text>Organic</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Weight Management Foods</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Heart - Healthy Foods</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Wellness & Immunity Boosters</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Diabetic - Friendly Foods</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Problem Solution Foods</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Organic</Text>
           </Box>
         </Box>
         <Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               CONFECTIONARY & PATISSERIE
             </Text>
-            <Text>Chocolates</Text>
-            <Text>Ice Creams & Desserts</Text>
-            <Text>Confectionery</Text>
-            <Text>Baking Ingredients</Text>
-            <Text>Patisserie</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Chocolates</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Ice Creams & Desserts</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Confectionery</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Baking Ingredients</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Patisserie</Text>
           </Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               MEATS SEAFOOD AND EGGS
             </Text>
-            <Text>Fresh Meats & Seafood</Text>
-            <Text>Cold Cuts & Sausages</Text>
-            <Text>Packaged Sea food & Meats</Text>
-            <Text>Eggs</Text>
-            <Text>Frozen</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Fresh Meats & Seafood</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Cold Cuts & Sausages</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Packaged Sea food & Meats</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Eggs</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Frozen</Text>
           </Box>
         </Box>
         <Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               BREAKFAST & DAIRY
             </Text>
-            <Text>Cereals, Bars & Others</Text>
-            <Text>Jams, Preserves & Conserves</Text>
-            <Text>Honey</Text>
-            <Text>Indian Breakfast Favourites</Text>
-            <Text>Frozen</Text>
-            <Text> Spreads</Text>
-            <Text>Milk, Yogurt & Other Dairy Drinks</Text>
-            <Text> Butters & Margarines</Text>
-            <Text>Bakery</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Cereals, Bars & Others</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Jams, Preserves & Conserves</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Honey</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Indian Breakfast Favourites</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Frozen</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}> Spreads</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Milk, Yogurt & Other Dairy Drinks</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}> Butters & Margarines</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Bakery</Text>
           </Box>
           <Box>
-            <Text mt="40px" fontWeight="bold">
+            <Text mt="40px" fontWeight="bold" fontSize={["8px","10px","13px","16px"]}>
               INSTANT MEALS & AIDS
             </Text>
-            <Text>Ready to Cook</Text>
-            <Text>Ready to Eat</Text>
-            <Text>Accessories</Text>
-            <Text>Books</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Ready to Cook</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Ready to Eat</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Accessories</Text>
+            <Text fontSize={["6px","8px","12px","14px"]}>Books</Text>
           </Box>
         </Box>
       </Box>
