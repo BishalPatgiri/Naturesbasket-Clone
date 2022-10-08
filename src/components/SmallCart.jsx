@@ -78,7 +78,7 @@ export default function SmallCart({ small, setSmall }) {
               </HStack>
               <Box overflow="auto">
                 {buyData.map((ele) => (
-                  <Box>
+                  <Box key={ele.id}>
                     <Box
                       p="8px"
                       textAlign="left"

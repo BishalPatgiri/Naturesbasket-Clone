@@ -7,38 +7,44 @@ import axios from "axios";
 
 export default function MainCart({ setSmall }) {
   const [data, setData] = useState([]);
-  const [qty, setQty] = useState(1);
-  const inc = (id) => {
-    setQty(qty + 1);
-    axios
-      .patch(`https://c4-project-data.herokuapp.com/buy/${id}`, { qty: qty })
-      .then((res) => {
-        buyData()
+
+  const getdata=()=>{
+          buyData()
           .then((res) => res.json())
           .then((res) => setData(res));
+  }
+
+  const inc = async(id) => {
+    axios.get(`https://c4-project-data.herokuapp.com/buy/${id}`).then(res=>{
+      axios.patch(`https://c4-project-data.herokuapp.com/buy/${id}`, { qty: res.data.qty+1 })
+      .then((res) => {
+          getdata()
       })
       .catch((e) => console.log(e));
+    
+    })
   };
 
   const dec = (id) => {
-    setQty(qty >= 2 ? qty - 1 : qty);
-    axios
-      .patch(`https://c4-project-data.herokuapp.com/buy/${id}`, { qty: qty })
+    axios.get(`https://c4-project-data.herokuapp.com/buy/${id}`).then(res=>{
+      if(res.data.qty>1){
+      axios.patch(`https://c4-project-data.herokuapp.com/buy/${id}`, { qty: res.data.qty-1 })
       .then((res) => {
-        buyData()
-          .then((res) => res.json())
-          .then((res) => setData(res));
+          getdata()
       })
       .catch((e) => console.log(e));
+      }
+      else{
+        alert("Can not decrease quantity further")
+      }
+    })
   };
 
   useEffect(() => {
     if (data.length === 0) {
-      buyData()
-        .then((res) => res.json())
-        .then((res) => setData(res));
+      getdata()
     }
-  }, [data]);
+  }, []);
   return (
     <Box w="85%" m="auto" fontFamily="CeraPRO-light" fontSize="16px">
       <Header setSmall={setSmall} />
@@ -81,7 +87,7 @@ export default function MainCart({ setSmall }) {
           <Text w="12%">Subtotal</Text>
         </HStack>
         {data.map((ele) => (
-          <Box>
+          <Box key={ele.id}>
             {/* {setQty(ele.qty)} */}
             <Box p="8px" textAlign="left" borderBottom="1px solid #938D8D">
               <Text fontWeight="bold">{ele.title}</Text>

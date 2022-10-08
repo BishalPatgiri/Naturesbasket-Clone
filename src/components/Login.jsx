@@ -97,7 +97,6 @@ export default function Login({ setLogin }) {
               onChange={(e) => setPass(e.target.value)}
               type="password"
               placeholder="Password"
-              maxlength="100"
               border="1px solid #9f9f9f"
               p="0 0 0 45px"
               borderRadius="2px"
