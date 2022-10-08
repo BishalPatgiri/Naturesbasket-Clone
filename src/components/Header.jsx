@@ -104,14 +104,14 @@ export default function Header({ setSmall, setLogin, setRegister }) {
                 focusBorderColor="white"
               ></Input>
               <Image
-                w="11%"
+                w={["12%","10%","8%","5%"]}
                 h="100%"
                 mt="5px"
                 ml={"-8px"}
                 src="https://www.naturesbasket.co.in/Images/search-button.jpg"
               ></Image>
             </HStack>
-            <HStack spacing="8%" onMouseLeave={() => setSmall(false)}>
+            <HStack spacing={["2%","2%","3%","5%"]} onMouseLeave={() => setSmall(false)}>
               <Image
                 w="45%"
                 h="21px"
