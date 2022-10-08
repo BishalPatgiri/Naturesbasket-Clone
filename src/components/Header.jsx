@@ -16,6 +16,7 @@ export default function Header({ setSmall, setLogin, setRegister }) {
   };
 
   const goHome = () => {
+    window.location.reload()
     navigate("/");
   };
 

@@ -57,7 +57,7 @@ export default function GiftPage() {
       <HStack>
         <Text
           textAlign="left"
-          fontSize="24px"
+          fontSize={["16px","20px","22px","24px"]}
           letterSpacing=".5px"
           borderBottom="1px solid #BAB1B1"
           p="10px 0px"
@@ -67,8 +67,8 @@ export default function GiftPage() {
         <Spacer />
         <Select
           onChange={handleSort}
-          w="150px"
-          fontSize="15px"
+          w={["90px","110px","140px","150px"]}
+          fontSize={["9px","11px","13px","15px"]}
           placeholder="SORT by Price"
           marginRight="10px"
         >
@@ -83,14 +83,15 @@ export default function GiftPage() {
           mr="20px"
           border="1px solid #999988"
           borderRadius="5px"
-          p="15px"
+          p={["2px","15px"]}
+          w={["30%","22%"]}
         >
-          <HStack borderBottom="1px" textAlign="left">
-            <Text fontSize="20px">FILTER</Text>
+          <Box display={["block","flex"]} borderBottom="1px" textAlign="left">
+            <Text fontSize={["12px","20px"]}>FILTER</Text>
             <Spacer />
-            <Text fontSize="13px">CLEAR ALL</Text>
-          </HStack>
-          <Text m="20px 0 18px 0" fontWeight="bold" textAlign="left">
+            <Text fontSize={["9px","14px"]}>CLEAR ALL</Text>
+          </Box>
+          <Text m="20px 0 18px 0" fontSize={["9px","14px"]} fontWeight="bold" textAlign="left">
             Gift Hampers
           </Text>
           <Button
@@ -99,29 +100,30 @@ export default function GiftPage() {
             w="95%"
             colorScheme="pink"
             variant="outline"
+            fontSize={["9px","14px"]}
           >
             E-Gift Vouchers
           </Button>
-          <Button w="95%" colorScheme="pink" variant="outline">
+          <Button w="95%" colorScheme="pink" variant="outline" fontSize={["9px","14px"]}>
             All Hampers
           </Button>
         </Box>
         <Box
-          w="95%"
+          w="75%"
           m="auto"
           mt="20px"
           display="grid"
-          gridTemplateColumns="repeat(4,1fr)"
+          gridTemplateColumns={["repeat(1,1fr)","repeat(2,1fr)","repeat(3,1fr)","repeat(3,1fr)","repeat(4,1fr)"]}
           gridTemplateRows="auto"
           gap="25px"
           rowGap="35px"
-          pl="10px"
+          p={["5%","0"]}
         >
           {data.map((ele) => (
             <Box key={ele.id}>
-              <Image borderRadius="10px" h="250px" w="100%" src={ele.image} />
+              <Image borderRadius="10px" h={["180px","250px"]} w={["100%"]} src={ele.image} />
               <Text m="20px 0px">{ele.name}</Text>
-              <Text w="25%" m="auto" border="1px solid green">
+              <Text w={"50%"} m="auto" border="1px solid green" borderRadius={"5px"}>
                 {ele.price} Rs
               </Text>
               <HStack mt="15px" spacing="15px" justify="center">
