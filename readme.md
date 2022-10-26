@@ -15,3 +15,7 @@
 - Gifting page
 - Small cart window
 - Main cart page
+
+### Homepage
+![Screenshot (1473)](https://user-images.githubusercontent.com/103960628/198088450-d22959ce-66a9-4e98-8065-54ca4e962eda.png)
+
